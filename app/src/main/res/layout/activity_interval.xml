@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#1D8107">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:background="#1D8107"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/tombol"
+            android:orientation="vertical"
+            tools:ignore="UselessParent">
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginTop="10dp"
+                android:layout_gravity="center"
+                android:background="@drawable/ic_baseline_av_timer_24"
+                android:contentDescription="@string/app_name" />
+
+            <TextView
+                android:textSize="14sp"
+                android:layout_width="wrap_content"
+                android:layout_gravity="center"
+                android:layout_height="wrap_content"
+                android:text="@string/interval"
+                android:background="#ffffff" />
+
+            <Button
+                android:layout_width="300dp"
+                android:layout_gravity="center_horizontal"
+                android:background="#208CFF"
+                android:layout_marginTop="10dp"
+                android:layout_height="5dp">
+            </Button>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:layout_marginTop="50dp"
+                android:layout_marginBottom="10dp"
+                android:orientation="horizontal" >
+
+                <LinearLayout
+                    android:layout_width="140dp"
+                    android:layout_height="200dp"
+                    android:background="@drawable/tombol"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginEnd="20dp"
+                    android:orientation="vertical"
+                    tools:ignore="UseCompoundDrawables">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="20dp"
+                        android:text="@string/mulai"
+                        android:textSize="12sp" />
+                    <TextView
+                        android:id="@+id/harim"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="2dp"
+                        android:layout_marginBottom="2dp"
+                        android:textAlignment="center"
+                        android:autofillHints="@string/sekarang"
+                        android:layout_gravity="center_horizontal"
+                        tools:ignore="LabelFor">
+                    </TextView>
+
+                    <EditText
+                        android:id="@+id/tanggalm"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:autofillHints="@string/hari"
+                        android:inputType="date"
+                        android:layout_marginTop="2dp"
+                        android:textAlignment="center"
+                        android:layout_marginBottom="2dp"
+                        android:hint="@string/tanggl"
+                        android:background="@drawable/tombol"
+                        android:layout_gravity="center_horizontal"
+                        tools:ignore="LabelFor">
+                    </EditText>
+                    <EditText
+                        android:id="@+id/bulanm"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="2dp"
+                        android:layout_marginBottom="2dp"
+                        android:autofillHints="@string/dulu"
+                        android:textAlignment="center"
+                        android:inputType="date"
+                        android:background="@drawable/tombol"
+                        android:hint="@string/bulan"
+                        android:layout_gravity="center_horizontal"
+                        tools:ignore="LabelFor">
+                    </EditText>
+                    <EditText
+                        android:id="@+id/tahunm"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="2dp"
+                        android:layout_marginBottom="2dp"
+                        android:autofillHints="@string/dulu"
+                        android:inputType="date"
+                        android:textAlignment="center"
+                        android:hint="@string/tahun"
+                        android:background="@drawable/tombol"
+                        android:layout_gravity="center_horizontal"
+                        tools:ignore="LabelFor">
+                    </EditText>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="140dp"
+                    android:layout_height="200dp"
+                    android:background="@drawable/tombol"
+                    android:layout_marginBottom="8dp"
+                    android:orientation="vertical"
+                    tools:ignore="UseCompoundDrawables">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="20dp"
+                        android:layout_gravity="center"
+                        android:text="@string/interval"
+                        android:textSize="12sp" />
+
+                    <EditText
+                        android:id="@+id/ihr"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:autofillHints="@string/hari"
+                        android:inputType="date"
+                        android:layout_marginTop="2dp"
+                        android:textAlignment="center"
+                        android:layout_marginBottom="2dp"
+                        android:hint="@string/hari"
+                        android:background="@drawable/tombol"
+                        android:layout_gravity="center_horizontal"
+                        tools:ignore="LabelFor">
+                    </EditText>
+                    <EditText
+                        android:id="@+id/img"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:autofillHints="@string/minggu"
+                        android:inputType="date"
+                        android:layout_marginTop="2dp"
+                        android:textAlignment="center"
+                        android:layout_marginBottom="2dp"
+                        android:hint="@string/minggu"
+                        android:background="@drawable/tombol"
+                        android:layout_gravity="center_horizontal"
+                        tools:ignore="LabelFor">
+                    </EditText>
+                    <EditText
+                        android:id="@+id/ibln"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="2dp"
+                        android:layout_marginBottom="2dp"
+                        android:autofillHints="@string/dulu"
+                        android:textAlignment="center"
+                        android:inputType="date"
+                        android:background="@drawable/tombol"
+                        android:hint="@string/bulan"
+                        android:layout_gravity="center_horizontal"
+                        tools:ignore="LabelFor">
+                    </EditText>
+                    <EditText
+                        android:id="@+id/ithn"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="2dp"
+                        android:layout_marginBottom="2dp"
+                        android:autofillHints="@string/dulu"
+                        android:inputType="date"
+                        android:textAlignment="center"
+                        android:hint="@string/tahun"
+                        android:background="@drawable/tombol"
+                        android:layout_gravity="center_horizontal"
+                        tools:ignore="LabelFor">
+                    </EditText>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="vertical" >
+                <TextView
+                    android:id="@+id/ket1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="5dp"
+                    android:textSize="14sp">
+                </TextView>
+                <TextView
+                    android:id="@+id/hasilsatu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:textSize="18sp"
+                    android:textColor="#000000"
+                    android:background="@drawable/tombol"
+                    android:layout_marginBottom="10dp">
+                </TextView>
+                <TextView
+                    android:id="@+id/ket2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="5dp"
+                    android:textSize="14sp">
+                </TextView>
+                <TextView
+                    android:id="@+id/hasildua"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:textColor="#000000"
+                    android:background="@drawable/tombol"
+                    android:textSize="18sp"
+                    android:layout_marginBottom="10dp">
+                </TextView>
+            </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal" >
+            <Button
+                android:id="@+id/ngitung1"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:textSize="20sp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="20dp"
+                android:text="@string/mundur"
+                android:textAllCaps="false"
+                android:textColor="#208CFF"
+                android:background="@drawable/tombol"
+                tools:ignore="ButtonStyle" />
+            <Button
+                android:id="@+id/ngitung2"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:textSize="20sp"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="20dp"
+                android:text="@string/maju"
+                android:textAllCaps="false"
+                android:textColor="#208CFF"
+                android:background="@drawable/tombol"
+                tools:ignore="ButtonStyle" />
+        </LinearLayout>
+
+        </LinearLayout>
+    </FrameLayout>
+
+
+</ScrollView>

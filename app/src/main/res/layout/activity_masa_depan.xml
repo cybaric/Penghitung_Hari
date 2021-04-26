@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#1D8107">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:background="#1D8107"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/tombol"
+            android:orientation="vertical"
+            tools:ignore="UselessParent">
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginTop="5dp"
+                android:layout_gravity="center"
+                android:background="@drawable/ic_baseline_update_24"
+                android:contentDescription="@string/app_name" />
+
+            <TextView
+                android:textSize="14sp"
+                android:layout_width="wrap_content"
+                android:layout_gravity="center"
+                android:layout_height="wrap_content"
+                android:text="@string/besok"
+                android:background="#ffffff" />
+
+            <Button
+                android:layout_width="300dp"
+                android:layout_gravity="center_horizontal"
+                android:background="#FFEB3B"
+                android:layout_marginTop="10dp"
+                android:layout_height="5dp">
+            </Button>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:layout_marginTop="50dp"
+                android:layout_marginBottom="10dp"
+                android:orientation="horizontal" >
+
+                <LinearLayout
+                    android:layout_width="140dp"
+                    android:layout_height="200dp"
+                    android:layout_marginEnd="20dp"
+                    android:background="@drawable/tombol"
+                    android:layout_marginBottom="8dp"
+                    android:orientation="vertical"
+                    tools:ignore="UseCompoundDrawables">
+
+                    <TextView
+                        android:textSize="12sp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="20dp"
+                        android:layout_gravity="center"
+                        android:text="@string/sekarang" />
+                    <TextView
+                        android:id="@+id/hariini"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="2dp"
+                        android:layout_marginBottom="2dp"
+                        android:textAlignment="center"
+                        android:autofillHints="@string/sekarang"
+                        android:layout_gravity="center_horizontal"
+                        tools:ignore="LabelFor">
+                    </TextView>
+                    <TextView
+                        android:id="@+id/tanggalini"
+                        android:layout_width="100dp"
+                        android:background="@drawable/tombol"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="2dp"
+                        android:layout_marginBottom="2dp"
+                        android:textAlignment="center"
+                        android:autofillHints="@string/sekarang"
+                        android:layout_gravity="center_horizontal"
+                        tools:ignore="LabelFor">
+                    </TextView>
+                    <TextView
+                        android:id="@+id/blnini"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/tombol"
+                        android:layout_marginTop="2dp"
+                        android:layout_marginBottom="2dp"
+                        android:textAlignment="center"
+                        android:autofillHints="@string/sekarang"
+                        android:layout_gravity="center_horizontal"
+                        tools:ignore="LabelFor">
+                    </TextView>
+                    <TextView
+                        android:id="@+id/thnini"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="2dp"
+                        android:layout_marginBottom="2dp"
+                        android:background="@drawable/tombol"
+                        android:textAlignment="center"
+                        android:autofillHints="@string/sekarang"
+                        android:layout_gravity="center_horizontal"
+                        tools:ignore="LabelFor">
+                    </TextView>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="140dp"
+                    android:layout_height="200dp"
+                    android:background="@drawable/tombol"
+
+                    android:layout_marginBottom="8dp"
+                    android:orientation="vertical"
+                    tools:ignore="UseCompoundDrawables">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="20dp"
+                        android:layout_gravity="center"
+                        android:text="@string/besok"
+                        android:textSize="12sp" />
+                    <TextView
+                        android:id="@+id/hrdpan"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="2dp"
+                        android:layout_marginBottom="2dp"
+                        android:textAlignment="center"
+                        android:autofillHints="@string/sekarang"
+                        android:layout_gravity="center_horizontal"
+                        tools:ignore="LabelFor">
+                    </TextView>
+
+                    <EditText
+                        android:id="@+id/tgldpan"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:autofillHints="@string/hari"
+                        android:inputType="date"
+                        android:layout_marginTop="2dp"
+                        android:textAlignment="center"
+                        android:layout_marginBottom="2dp"
+                        android:hint="@string/tanggl"
+                        android:background="@drawable/tombol"
+                        android:layout_gravity="center_horizontal"
+                        tools:ignore="LabelFor">
+                    </EditText>
+                    <EditText
+                        android:id="@+id/blndpan"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="2dp"
+                        android:layout_marginBottom="2dp"
+                        android:autofillHints="@string/dulu"
+                        android:textAlignment="center"
+                        android:inputType="date"
+                        android:background="@drawable/tombol"
+                        android:hint="@string/bulan"
+                        android:layout_gravity="center_horizontal"
+                        tools:ignore="LabelFor">
+                    </EditText>
+                    <EditText
+                        android:id="@+id/thndpan"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="2dp"
+                        android:layout_marginBottom="2dp"
+                        android:autofillHints="@string/dulu"
+                        android:inputType="date"
+                        android:textAlignment="center"
+                        android:hint="@string/tahun"
+                        android:background="@drawable/tombol"
+                        android:layout_gravity="center_horizontal"
+                        tools:ignore="LabelFor">
+                    </EditText>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_gravity="center">
+                <TextView
+                    android:id="@+id/hasila"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#F368B5"
+                    android:background="@drawable/tombol"
+                    android:textSize="18sp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp">
+                </TextView>
+                <TextView
+                    android:id="@+id/hasilb"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/tombol"
+                    android:textColor="#F368B5"
+                    android:layout_gravity="center"
+                    android:textSize="18sp"
+                    android:layout_marginBottom="10dp">
+                </TextView>
+                <TextView
+                    android:id="@+id/hasilc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/tombol"
+                    android:textColor="#F368B5"
+                    android:layout_gravity="center"
+                    android:textSize="18sp"
+                    android:layout_marginBottom="10dp">
+                </TextView>
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/itung"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:textSize="20sp"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="10dp"
+                android:text="@string/hitung"
+                android:textAllCaps="false"
+                android:textColor="#FFEB3B"
+                android:background="@drawable/tombol" />
+
+        </LinearLayout>
+    </FrameLayout>
+
+
+</ScrollView>
